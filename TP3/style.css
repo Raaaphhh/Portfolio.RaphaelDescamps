@@ -1,0 +1,48 @@
+/* Style pour le formulaire */
+form {
+    border: 2px solid #000; /* Bordure noire de 2px */
+    padding: 20px; /* Espacement interne de 20px */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Largeur de 100% */
+    padding: 10px; /* Espacement interne de 10px */
+    margin: 10px 0; /* Marge de 10px en haut et en bas */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur totale */
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #9b9292; /* Couleur de fond verte */
+    color: white; /* Couleur du texte blanche */
+    padding: 10px 20px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+}
+
+button:hover {
+    background-color: #112212; /* Couleur de fond verte plus foncée au survol */
+}
+
+/* Centrer le contenu du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centrer le texte du h1 */
+h1 {
+    text-align: center;
+}
