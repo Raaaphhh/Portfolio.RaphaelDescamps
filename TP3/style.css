@@ -1,0 +1,33 @@
+body {
+    background-color: #653030;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #ffffff; /* Ajout de la couleur du texte pour un meilleur contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Amélioration de la lisibilité du texte */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffcccb; /* Couleur des titres pour les faire ressortir */
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    color: #ffcccb; /* Couleur des liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
