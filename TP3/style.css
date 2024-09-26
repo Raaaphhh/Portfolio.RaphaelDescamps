@@ -29,6 +29,7 @@ button {
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Coins arrondis */
     cursor: pointer; /* Curseur pointeur */
+    box-shadow: 3px 3px 5px #888; /* Ombre portée */
 }
 
 button:hover {
