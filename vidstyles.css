@@ -97,6 +97,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInDown 2s;
 }
 
 button:hover {
