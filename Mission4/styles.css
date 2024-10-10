@@ -1,0 +1,54 @@
+body {
+    background-color: #f0f0f0; /* Couleur de fond plus claire */
+    color: #333; /* Couleur du texte */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    display: flex;
+    flex-direction: column; /* Ajouté pour aligner les éléments verticalement */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ajouté pour limiter la largeur de la boîte */
+    width: 100%; /* Assure que la boîte prend toute la largeur disponible */
+    margin-bottom: 20px; /* Ajouté pour espacer les conteneurs si nécessaire */
+}
+
+h1 {
+    font-size: 2.5em; /* Taille de police plus grande */
+    color: #007BFF; /* Couleur bleue pour le texte */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+button  {
+    background-color: #e0e0e0;
+    align-items: center;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInDown 2s;
+}
+
+button:hover {
+    background-color: #00aaff;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ff9900;
+    transform: scale(1);
+}
