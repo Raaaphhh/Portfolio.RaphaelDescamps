@@ -43,6 +43,7 @@ header h1 {
 
 .portfolio-item {
     background-color: #333;
+    text-align: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -60,7 +61,7 @@ header h1 {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     background-color: #2a2a2a;
     width: 100%;
     position: fixed;
