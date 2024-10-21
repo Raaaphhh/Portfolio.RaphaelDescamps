@@ -30,7 +30,7 @@ function calculmoyenne(){
 
 function test_couleur(){
     let couleur = prompt("Entrez une couleur");
-    if (couleur == "bleu" || couleur == blue){
+    if (couleur == "bleu" || couleur == "blue"){
         document.write("La couleur est bleu");
         document.body.style.backgroundColor = "blue";
     } else if (couleur == "rouge" || couleur == red){
@@ -40,7 +40,7 @@ function test_couleur(){
         document.write("La couleur est vert" || couleur == green);
         document.body.style.backgroundColor = "green";
     } else {
-        document.write("Couleur non reconnue");
+        document.write("Couleur non reconnued donc je te met du noir ! ");
         document.body.style.backgroundColor = "black";
     }
 }
@@ -49,6 +49,8 @@ function test_couleur(){
 function simple_affichage(){
     let nom = prompt("Entrez votre nom");
     let prenom = prompt("Entrez votre prénom");
+    var age = prompt("Entrez votre prénom");
     document.write("Nom: " + nom + "<br>");
     document.write("Prénom: " + prenom + "<br>");
+    document.write("Age: " + age + "<br>");
 }
