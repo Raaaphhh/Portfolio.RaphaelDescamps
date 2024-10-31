@@ -1,0 +1,113 @@
+body{
+   
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: yellow;
+}
+
+.coin {
+    border: 2px solid black;
+    float: left;
+    padding: 10px;
+    background-color: beige;
+}
+
+/* Header */
+.infoperso{
+    float: left;
+    margin-bottom: 20px;
+    background-color: rgb(204, 196, 204);
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+.photo{
+    float: right;
+}
+
+/* Partie formation */
+
+.formation{
+    float: left;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.titreformation{
+    width: 30%;
+    float: left;
+}
+
+.txtform{
+    
+    width: 60%;
+    float : right; 
+    text-align: center;
+}
+
+
+/* Partie experience */
+.experience{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 2px;
+    float : left;
+    width: 100%;
+}
+
+.titreexperience{
+    
+    float: left;
+}
+
+.txtexp{
+    
+    width: 60%;
+    float : right; 
+}
+
+/* Langue */
+
+.langueinfo{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 2px;
+    float : left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titrelangueinfo{
+    
+    width: 30%;
+    float: left;
+}
+
+.descriplangueinfo{
+   
+    width: 60%;
+    float : right; 
+}
+
+/* Activité perso */
+
+.actperso{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 2px;
+    float : left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.titreexperience{
+    width: 30%;
+    float: left;
+}
