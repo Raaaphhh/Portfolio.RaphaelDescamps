@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to right, #d3411d, #109643);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.connexion {
+    border: 2px solid black;
+    border-radius: 2%;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
