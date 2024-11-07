@@ -17,6 +17,7 @@ function resultat(){
     var resligne3 = Number(valPrx3) * Number(ValQua3);
     resultat3.value = resligne3;
 
+    // total
     resligne1 = Number(resultat1.value);
     resligne2 = Number(resultat2.value);
     resligne3 = Number(resultat3.value);
