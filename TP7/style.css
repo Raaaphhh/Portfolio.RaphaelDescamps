@@ -13,7 +13,7 @@ table {
 }
 
 body{
-    background-color: #f0f0f0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1517849845537-4d257902454a");
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     margin: 0;
