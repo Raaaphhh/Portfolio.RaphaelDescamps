@@ -39,3 +39,9 @@ button {
 button:hover {
     background-color: #0f110f;
 }
+
+.acceuil{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
