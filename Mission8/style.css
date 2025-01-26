@@ -1,0 +1,35 @@
+header {
+    background-color: #1E90FF; 
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadre1 {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: #1E90FF; 
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}
+
