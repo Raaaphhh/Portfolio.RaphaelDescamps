@@ -6,15 +6,27 @@ header {
     align-items: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .cadre1 {
     border: 1px solid #000000;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
     text-align: center;
 }
 
+.exo1 {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    /* padding: 10px;
+    margin: 10px; */
+    /* padding-right: 100px; */
+    text-align: center;
+}
 
 
 
