@@ -15,8 +15,8 @@ document.getElementById("sol1").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black"; // Adding border to make it a small box
         newDiv.textContent = "function Add(a,b){ result = a + b; return result; }";
         document.getElementById("demo1").insertAdjacentElement("afterend", newDiv);
@@ -42,8 +42,8 @@ document.getElementById("sol2").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black"; // Adding border to make it a small box
         newDiv.textContent = "function(){ let sum = ''; for(let i = 1; i <= chiffre; i++){ sum += i; } return sum; }";
         document.getElementById("demo2").insertAdjacentElement("afterend", newDiv);
@@ -69,8 +69,8 @@ document.getElementById("sol3").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function Factorial(n){ let result = 1; for(let i = 1; i <= n; i++){ result *= i; } return result; }";
         document.getElementById("demo3").insertAdjacentElement("afterend", newDiv);
@@ -103,8 +103,8 @@ document.getElementById("sol4").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function IsPrime(n){ if(n <= 1) return false; for(let i = 2; i < n; i++){ if(n % i === 0) return false; } return true; }";
         document.getElementById("demo4").insertAdjacentElement("afterend", newDiv);
@@ -130,8 +130,8 @@ document.getElementById("sol5").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function Fibonacci(n){ let fib = [0, 1]; for(let i = 2; i < n; i++){ fib[i] = fib[i - 1] + fib[i - 2]; } return fib.slice(0, n); }";
         document.getElementById("demo5").insertAdjacentElement("afterend", newDiv);
@@ -154,8 +154,8 @@ document.getElementById("sol6").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function ReverseNumber(n){ return n.split('').reverse().join(''); }";
         document.getElementById("demo6").insertAdjacentElement("afterend", newDiv);
@@ -178,8 +178,8 @@ document.getElementById("sol7").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function ReverseString(s){ return s.split('').reverse().join(''); }";
         document.getElementById("demo7").insertAdjacentElement("afterend", newDiv);
@@ -202,8 +202,8 @@ document.getElementById("sol8").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function CountVowels(s){ let vowels = s.match(/[aeiou]/gi); return vowels ? vowels.length : 0; }";
         document.getElementById("demo8").insertAdjacentElement("afterend", newDiv);
@@ -226,8 +226,8 @@ document.getElementById("sol9").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function CountWords(s){ return s.split(' ').length; }";
         document.getElementById("demo9").insertAdjacentElement("afterend", newDiv);
@@ -253,8 +253,8 @@ document.getElementById("sol10").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function CharFrequency(s){ let charCount = {}; for(let char of s){ charCount[char] = charCount[char] ? charCount[char] + 1 : 1; } return charCount; }";
         document.getElementById("demo10").insertAdjacentElement("afterend", newDiv);
@@ -277,8 +277,8 @@ document.getElementById("sol11").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function LongestWord(s){ return s.split(' ').reduce((longest, current) => current.length > longest.length ? current : longest, ''); }";
         document.getElementById("demo11").insertAdjacentElement("afterend", newDiv);
@@ -301,8 +301,8 @@ document.getElementById("sol12").addEventListener("click", function() {
         newDiv.style.backgroundColor = "grey";
         newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
-        newDiv.style.marginRight = "700px";
-        newDiv.style.marginLeft = "700px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
         newDiv.style.border = "1px solid black";
         newDiv.textContent = "function CapitalizeWords(s){ return s.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '); }";
         document.getElementById("demo12").insertAdjacentElement("afterend", newDiv);
