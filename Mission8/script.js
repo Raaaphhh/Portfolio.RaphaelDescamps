@@ -308,3 +308,75 @@ document.getElementById("sol12").addEventListener("click", function() {
         document.getElementById("demo12").insertAdjacentElement("afterend", newDiv);
     }
 });
+
+//Exercice 13
+document.getElementById("demo13").addEventListener("click", function() {
+    let str = prompt("Entrez une chaîne de caractères:");
+    let palindrome = str === str.split("").reverse().join("");
+    alert("La chaîne " + (palindrome ? "est" : "n'est pas") + " un palindrome.");
+});
+
+document.getElementById("sol13").addEventListener("click", function() {
+    let existingDiv = document.querySelector("#demo13 + div");
+    if (existingDiv) {
+        existingDiv.remove();
+    } else {
+        let newDiv = document.createElement("div");
+        newDiv.style.backgroundColor = "grey";
+        newDiv.style.padding = "10px";
+        newDiv.style.marginTop = "10px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
+        newDiv.style.border = "1px solid black";
+        newDiv.textContent = "function IsPalindrome(s){ return s === s.split('').reverse().join(''); }";
+        document.getElementById("demo13").insertAdjacentElement("afterend", newDiv);
+    }
+});
+
+//Exercice 14
+document.getElementById("demo14").addEventListener("click", function() {
+    let num = prompt("Entrez un nombre:");
+    let binary = parseInt(num).toString(2);
+    alert("La représentation binaire de " + num + " est: " + binary);
+});
+
+document.getElementById("sol14").addEventListener("click", function() {
+    let existingDiv = document.querySelector("#demo14 + div");
+    if (existingDiv) {
+        existingDiv.remove();
+    } else {
+        let newDiv = document.createElement("div");
+        newDiv.style.backgroundColor = "grey";
+        newDiv.style.padding = "10px";
+        newDiv.style.marginTop = "10px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
+        newDiv.style.border = "1px solid black";
+        newDiv.textContent = "function ToBinary(n){ return parseInt(n).toString(2); }";
+        document.getElementById("demo14").insertAdjacentElement("afterend", newDiv);
+    }
+});
+
+//Exercice 15
+document.getElementById("demo15").addEventListener("click", function() {
+    let num = prompt("Entrez un nombre:");
+    let isEven = parseInt(num) % 2 === 0;
+    alert(num + " est " + (isEven ? "pair." : "impair."));
+});
+
+document.getElementById("sol15").addEventListener("click", function() {
+    let existingDiv = document.querySelector("#demo15 + div");
+    if (existingDiv) {
+        existingDiv.remove();
+    } else {
+        let newDiv = document.createElement("div");
+        newDiv.style.backgroundColor = "grey";
+        newDiv.style.padding = "10px";
+        newDiv.style.marginTop = "10px";
+        newDiv.style.marginRight = "500px";
+        newDiv.style.marginLeft = "500px";
+        newDiv.style.border = "1px solid black";
+        newDiv.textContent = "function IsEven(n){ return parseInt(n) % 2 === 0; }";
+        document.getElementById("demo15").insertAdjacentElement("afterend", newDiv);
+    }
+});
