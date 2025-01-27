@@ -1,18 +1,28 @@
 function testQCM() {
-    let compteur = 0; // Compteur de bonnes réponses
-    let reponses = document.querySelectorAll("input[type=checkbox]:checked"); // On récupère les réponses cochées
+    let compteurbr = 0; // compteurbr de bonnes réponses
+    let compteurmr = 0; // compteurmr mauvaise réponses
+    let reponses = document.querySelectorAll("input[type=radio]:checked"); // On récupère les réponses cochées
+    // let allreponses = document.querySelectorAll("input[type=radio]:unchecked");
     
     reponses.forEach(function(reponse) {
         if (reponse.dataset.correct === "true") {
-            compteur += 1;
+            compteurbr += 1;
+        }
+        else if(reponse.dataset.correct === "false"){
+            compteurmr +=1;
         }
     });
 
-    let emplacementresultat = document.getElementById("result");
+    if ( compteurbr === 0 || compteurmr === 0){
+        alert("Repondez à au moins DEUX questions pour generer votre résultats")
+    }
+    else{
+        let emplacementresultat = document.getElementById("result");
     if (emplacementresultat) {
-        emplacementresultat.innerHTML = "Vous avez <span style='color: red;'>" + compteur + "</span> bonnes réponses.";
+        emplacementresultat.innerHTML = "Vous avez <span style='color: green;'>" + compteurbr + "</span>/10 bonnes réponses et " + "<span style='color: red;'>" + compteurmr + "</span> mauvaises réponses";
     } else {
         console.error("L'élément avec l'ID 'result' est introuvable.");
+    }
     }
 }
 
@@ -27,7 +37,7 @@ if (corrigeButton) {
 let effacerButton = document.getElementById("effacer");
 if (effacerButton) {
     effacerButton.addEventListener("click", function() {
-        let checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
+        let checkboxes = document.querySelectorAll("input[type=radio]:checked");
         checkboxes.forEach(function(checkbox) {
             checkbox.checked = false;
         });
