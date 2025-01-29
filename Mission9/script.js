@@ -13,11 +13,11 @@ function testQCM() {
         }
     });
 
-    if ( compteurbr === 0 || compteurmr === 0){
-        alert("Repondez à au moins DEUX questions pour generer votre résultats")
+    if (compteurbr === 0 && compteurmr === 0){
+        alert("Repondez à au moins Une questions pour generer votre résultats")
     }
     else{
-        let emplacementresultat = document.getElementById("result");
+        let emplacementresultat = document.getElementById("resultplace");
     if (emplacementresultat) {
         emplacementresultat.innerHTML = "Vous avez <span style='color: green;'>" + compteurbr + "</span>/10 bonnes réponses et " + "<span style='color: red;'>" + compteurmr + "</span> mauvaises réponses";
     } else {
@@ -26,12 +26,18 @@ function testQCM() {
     }
 }
 
-let corrigeButton = document.getElementById("corrige");
+let corrigeButton = document.getElementById("resultat");
 if (corrigeButton) {
     corrigeButton.addEventListener("click", testQCM);
 } else {
     console.error("L'élément avec l'ID 'corrige' est introuvable.");
 }
+
+
+
+
+
+
 
 // renitialiser les cases cochées
 let effacerButton = document.getElementById("effacer");
