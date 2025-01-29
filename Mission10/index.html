@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 10</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <h2>Destinataire</h2>
+    <hr>
+    <p>Nom</p>
+    <p>Nom de la société</p>
+    <p>Adresse postale</p>
+    <p>Téléphone</p>
+    <p>Email</p>
+
+    <h2>Envoyer à</h2>
+    <hr>
+    <p>Nom</p>
+    <p>Nom de la société</p>
+    <p>Adresse postale</p>
+    <p>Téléphone</p>
+    <p>Email</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+            <tr class="1row">
+                <td><input type="text" name="description1" value="Desc1"></td>
+                <td><input type="text" name="quantity1" value="0"></td>
+                <td><input type="text" name="unitPrice1" value="0"></td>
+                <td><input type="text" name="total1" readonly value="0"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="description2" value="DESC2"></td>
+                <td><input type="text" name="quantity2" value="0"></td>
+                <td><input type="text" name="unitPrice2" value="0"></td>
+                <td><input type="text" name="total2" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="description3" value="DESC3"></td>
+                <td><input type="text" name="quantity3" value="0"></td>
+                <td><input type="text" name="unitPrice3" value="0" ></td>
+                <td><input type="text" name="total3" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="description4" value="DESC4"></td>
+                <td><input type="text" name="quantity4" value="0"></td>
+                <td><input type="text" name="unitPrice4" value="0"></td>
+                <td><input type="text" name="total4" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="description5" value="DESC5"></td>
+                <td><input type="text" name="quantity5" value="0"></td>
+                <td><input type="text" name="unitPrice5" value="0"></td>
+                <td><input type="text" name="total5" value="0" readonly></td>
+            </tr>
+            <tr class="LastRow">
+                <td><input type="text" name="description6" value="DESC6"></td>
+                <td><input type="text" name="quantity6" value="0"></td>
+                <td><input type="text" name="unitPrice6" value="0"></td>
+                <td><input type="text" name="total6" value="0" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p>Sous-Total: <input type="text" id="subTotal"  readonly></p>
+        <p>Remise: <input type="text" id="discount" ></p>
+        <p>Sous-Total Moins les Remises: <input type="text" id="subTotalAfterDiscount"  readonly></p>
+        <p>Taux d'Imposition: <input type="text" id="taxRate" ></p>
+        <p>Taxe Totale: <input type="text" id="totalTax"  readonly></p>
+        <p>Expédition et Manutention: <input type="text" id="shippingHandling" ></p>
+        <p>Solde: <input type="text" id="balance" readonly></p>
+    </div>
+    <div>
+        <button onclick="Calculer()">Calculer</button>
+        <button onclick="AjoutLigne()">Ajouter une ligne</button>
+        <button onclick="RemplirAuto()">Remplir Automatiquement</button>
+        <button onclick="Annuler()">Annuler</button>
+    </div>
+</body>
+<footer>
+
+</footer>
+<script src="script.js"></script>
+</html>
