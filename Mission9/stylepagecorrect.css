@@ -55,16 +55,15 @@ h3 {
     color: #34495e;
 }
 
-input[type="radio"] {
-    margin: 10px;
+p {
+    margin: 5px 0;
+    font-size: 16px;
 }
 
-/* Résultats */
-#resultplace {
-    margin-top: 20px;
-    font-size: 18px;
+/* Réponses correctes */
+p[style*="color: green"] {
     font-weight: bold;
-    color: #e74c3c;
+    color: #27ae60 !important;
 }
 
 /* Pied de page */
