@@ -75,13 +75,10 @@
         </tbody>
     </table>
     <div>
-        <p>Sous-Total: <input type="text" id="subTotal"  readonly></p>
-        <p>Remise: <input type="text" id="discount" ></p>
-        <p>Sous-Total Moins les Remises: <input type="text" id="subTotalAfterDiscount"  readonly></p>
-        <p>Taux d'Imposition: <input type="text" id="taxRate" ></p>
-        <p>Taxe Totale: <input type="text" id="totalTax"  readonly></p>
-        <p>Expédition et Manutention: <input type="text" id="shippingHandling" ></p>
-        <p>Solde: <input type="text" id="balance" readonly></p>
+        <p>Sous-Total: <input type="text" id="sous_total" value="" readonly></p>
+        <p>Sous-Total Moins les Remises: <input type="text" id="sous_total_moin_remise" value="" readonly></p>
+        <p>Taxe Totale: <input type="text" id="taxetotal" value="" readonly></p>
+        <p>Solde: <input type="text" id="sold" value="" readonly></p>
     </div>
     <div>
         <button onclick="Calculer()">Calculer</button>

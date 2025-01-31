@@ -17,7 +17,7 @@ document.getElementById("sol1").addEventListener("click", function() {
         newDiv.style.marginTop = "10px";
         newDiv.style.marginRight = "500px";
         newDiv.style.marginLeft = "500px";
-        newDiv.style.border = "1px solid black"; // Adding border to make it a small box
+        newDiv.style.border = "1px solid black"; 
         newDiv.textContent = "function Add(a,b){ result = a + b; return result; }";
         document.getElementById("demo1").insertAdjacentElement("afterend", newDiv);
     }
