@@ -8,26 +8,32 @@
 </head>
 <body>
     <header>
-        
+        <h1>Mission 10 / Facture</h1>
     </header>
 
-    <h2>Destinataire</h2>
-    <hr>
-    <p>Nom</p>
-    <p>Nom de la société</p>
-    <p>Adresse postale</p>
-    <p>Téléphone</p>
-    <p>Email</p>
+    <div id="Destinataire">
+        <h2>Destinataire</h2>
+        <hr>
+        <p>Nom: <input type="text" name="destinataire_nom" value=""></p>
+        <p>Nom de la société: <input type="text" name="destinataire_societe" value=""></p>
+        <p>Adresse postale: <input type="text" name="destinataire_adresse" value=""></p>
+        <p>Téléphone: <input type="text" name="destinataire_telephone" value=""></p>
+        <p>Email: <input type="text" name="destinataire_email" value=""></p>
+    </div>
 
-    <h2>Envoyer à</h2>
-    <hr>
-    <p>Nom</p>
-    <p>Nom de la société</p>
-    <p>Adresse postale</p>
-    <p>Téléphone</p>
-    <p>Email</p>
+    <div id="EnvoyerA">
+        <h2>Envoyer à</h2>
+        <hr>
+        <p>Nom: <input type="text" name="envoyer_nom" value=""></p>
+        <p>Nom de la société: <input type="text" name="envoyer_societe" value=""></p>
+        <p>Adresse postale: <input type="text" name="envoyer_adresse" value=""></p>
+        <p>Téléphone: <input type="text" name="envoyer_telephone" value=""></p>
+        <p>Email: <input type="text" name="envoyer_email" value=""></p>
+    </div>
+    
+    <br><br>
 
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>Description</th>
@@ -38,39 +44,21 @@
         </thead>
         <tbody id="table">
             <tr class="1row">
-                <td><input type="text" name="description1" value="Desc1"></td>
+                <td><input type="text" name="description1" value="DESC1"></td>
                 <td><input type="text" name="quantity1" value="0"></td>
                 <td><input type="text" name="unitPrice1" value="0"></td>
                 <td><input type="text" name="total1" readonly value="0"></td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td><input type="text" name="description2" value="DESC2"></td>
                 <td><input type="text" name="quantity2" value="0"></td>
                 <td><input type="text" name="unitPrice2" value="0"></td>
                 <td><input type="text" name="total2" value="0" readonly></td>
             </tr>
-            <tr>
+            <tr class="LastRow">
                 <td><input type="text" name="description3" value="DESC3"></td>
                 <td><input type="text" name="quantity3" value="0"></td>
-                <td><input type="text" name="unitPrice3" value="0" ></td>
-                <td><input type="text" name="total3" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="description4" value="DESC4"></td>
-                <td><input type="text" name="quantity4" value="0"></td>
-                <td><input type="text" name="unitPrice4" value="0"></td>
-                <td><input type="text" name="total4" value="0" readonly></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="description5" value="DESC5"></td>
-                <td><input type="text" name="quantity5" value="0"></td>
-                <td><input type="text" name="unitPrice5" value="0"></td>
-                <td><input type="text" name="total5" value="0" readonly></td>
-            </tr> -->
-            <tr class="LastRow">
-                <td><input type="text" name="description6" value="DESC6"></td>
-                <td><input type="text" name="quantity6" value="0"></td>
-                <td><input type="text" name="unitPrice6" value="0"></td>
+                <td><input type="text" name="unitPrice3" value="0"></td>
                 <td><input type="text" name="total6" value="0" readonly></td>
             </tr>
         </tbody>
@@ -85,14 +73,15 @@
         <hr>
         <p>Solde: <input type="text" id="solde" value="" readonly></p>
     </div>
+    
+</body>
+<footer>
     <div>
         <button onclick="Calculer()">Calculer</button>
         <button onclick="AjoutLigne()">Ajouter une ligne</button>
         <button onclick="RemplirAuto()">Remplir Automatiquement</button>
         <button onclick="Annuler()">Annuler</button>
     </div>
-</body>
-<footer>
 </footer>
 <script src="script.js"></script>
 </html>

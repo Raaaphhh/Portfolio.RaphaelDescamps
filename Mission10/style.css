@@ -1,0 +1,86 @@
+/* Style du header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 4px solid #555;
+}
+
+/* Style des sections Destinataire et EnvoyerA */
+#Destinataire,
+#EnvoyerA {
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#Destinataire {
+    float: left;
+    margin-left: 5%;
+}
+
+#EnvoyerA {
+    float: right;
+    margin-right: 5%;
+}
+
+/* Style du tableau */
+table {
+    border-collapse: collapse;
+    width: 65%;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des lignes du tableau */
+tr {
+    border-bottom: 2px solid black;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* Style des cellules */
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#recape{
+    float: left;
+    margin-left: 220px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top: 4px solid #555;
+    clear: both;
+}
+
+/* Ajustement responsive */
+@media screen and (max-width: 768px) {
+    #Destinataire, #EnvoyerA {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    table {
+        width: 95%;
+    }
+}
