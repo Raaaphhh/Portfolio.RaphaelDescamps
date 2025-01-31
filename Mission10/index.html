@@ -43,7 +43,7 @@
                 <td><input type="text" name="unitPrice1" value="0"></td>
                 <td><input type="text" name="total1" readonly value="0"></td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td><input type="text" name="description2" value="DESC2"></td>
                 <td><input type="text" name="quantity2" value="0"></td>
                 <td><input type="text" name="unitPrice2" value="0"></td>
@@ -66,7 +66,7 @@
                 <td><input type="text" name="quantity5" value="0"></td>
                 <td><input type="text" name="unitPrice5" value="0"></td>
                 <td><input type="text" name="total5" value="0" readonly></td>
-            </tr>
+            </tr> -->
             <tr class="LastRow">
                 <td><input type="text" name="description6" value="DESC6"></td>
                 <td><input type="text" name="quantity6" value="0"></td>
@@ -75,11 +75,15 @@
             </tr>
         </tbody>
     </table>
-    <div>
+    <div id="recape">
         <p>Sous-Total: <input type="text" id="sous_total" value="" readonly></p>
-        <p>Sous-Total Moins les Remises: <input type="text" id="sous_total_moin_remise" value="" readonly></p>
+        <p>Remise: <input type="text" id="remise" value="10.00" readonly></p>
+        <p>Sous-Total moins les Remises: <input type="text" id="sous_total_moin_remise" value="" readonly></p>
+        <p>Taux d'imposition: <input type="text" id="taux_imposition" value="10.00%" readonly></p>
         <p>Taxe Totale: <input type="text" id="taxetotal" value="" readonly></p>
-        <p>Solde: <input type="text" id="sold" value="" readonly></p>
+        <p>Frais Expédition: <input type="text" id="frais_expedition" value="15e" readonly></p>
+        <hr>
+        <p>Solde: <input type="text" id="solde" value="" readonly></p>
     </div>
     <div>
         <button onclick="Calculer()">Calculer</button>
