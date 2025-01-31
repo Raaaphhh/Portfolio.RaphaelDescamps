@@ -22,8 +22,8 @@ header {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1.5em;
-    font-size: 1.3em;
+    padding: 0.5em;
+    font-size: 1em;
     font-weight: bold;
     border-bottom: 5px solid var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
