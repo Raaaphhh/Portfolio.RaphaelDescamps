@@ -28,7 +28,7 @@ function Calculer(){
         totalPrixUnitaire = totalPrixUnitaire + unitPrice;
         totalSum = totalSum + quantite * unitPrice;
         sous_total = sous_total + totalSum;  // Somme total des dernieres colonnes
-        sous_total_moins_remise = sous_total-(sous_total * remise)
+        sous_total_moins_remise = sous_total-(sous_total * remise);
 
         row.cells[3].querySelector("input").value = totalSum;
 
