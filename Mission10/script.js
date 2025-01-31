@@ -41,14 +41,33 @@ function Calculer(){
         document.getElementById("sous_total").value = sous_total;
 
         document.getElementById("taxetotal").value = taxe_totale;
-
-        // console.log("Total Quantity: " + totalQuantite);
-        // console.log("Total Unit Price: " + totalPrixUnitaire);   controle sur la console 
     }
-
     sous_total_moins_remise += sous_total - (sous_total * remise / 100);
     solde = sous_total_moins_remise + taxe_totale + frais_expedition; // Solde total
     document.getElementById("sous_total_moin_remise").value = sous_total_moins_remise;
     document.getElementById("solde").value = solde;
+}
 
+function RemplirAuto(){
+    var table = document.getElementById("table");
+    for(var i = 0, row, rows = table.rows.length; i < rows; i++){
+        row = table.rows[i];
+        row.cells[1].querySelector("input").value = Math.floor(1000 *Math.random()+1);
+        row.cells[2].querySelector("input").value = Math.floor(30 *Math.random()+1);
+    }
+}
+
+function Annuler(){
+    var table = document.getElementById("table");
+    
+    document.getElementById("sous_total").value = 0;
+    document.getElementById("taxetotal").value = 0;
+    document.getElementById("sous_total_moin_remise").value = 0;
+    document.getElementById("solde").value = 0;
+
+    for (var i = 0, row; row = table.rows[i]; i++) {
+        row.cells[1].querySelector("input").value = 0;
+        row.cells[2].querySelector("input").value = 0;
+        row.cells[3].querySelector("input").value = 0;
+    }
 }
