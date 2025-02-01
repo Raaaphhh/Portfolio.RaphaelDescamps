@@ -32,13 +32,16 @@ body {
     flex-direction: column; /* Arrange les éléments en colonne */
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 #TP:hover,
 #Mission:hover,
 #ProjBdd:hover {
     transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a white outline to the text */
+    text-shadow: 0 1px 0px rgba(110, 34, 34, 0.8); /* Add a white outline to the text */
+    text-shadow: 0 0 10px rgba(135, 33, 33, 0.8); /* Add a white outline to the text */
 }
 
 #btnRetour{
