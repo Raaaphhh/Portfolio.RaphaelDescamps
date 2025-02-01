@@ -40,3 +40,15 @@ body {
 #ProjBdd:hover {
     transform: scale(1.1);
 }
+
+#btnRetour{
+    position: absolute;
+    width: 135px;
+    bottom: 10px;
+    left: 45%;
+    align-items: center;
+}
+
+#btnRetour:hover {
+    transform: scale(1.1);
+}
