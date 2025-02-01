@@ -2,8 +2,8 @@
 
 body {
     background-color: rgb(18, 18, 18);
-    display: flex;
     font-family: 'Press Start 2P', cursive;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
@@ -21,29 +21,22 @@ body {
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-image: url('../AssetsHomePage/backgroudHomePage.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('../../AssetsHomePage/2eBackground.jpg'); /* Remplacez par le chemin de votre image */
     background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
     background-position: center; /* Centre l'image dans le cadre */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
 }
 
-#btnVersPortfolio {
-    width: 150px;
-    margin-top: 160px;
-    z-index: 1;
+#choix {
+    display: flex;
+    flex-direction: column; /* Arrange les éléments en colonne */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-#btnVersPortfolio:hover {
+#TP:hover,
+#Mission:hover,
+#ProjBdd:hover {
     transform: scale(1.1);
 }
-
-#copy {
-    color: black;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-    text-shadow: 2px 2px 4px #ffffff;
-    z-index: 1;
-}
-
