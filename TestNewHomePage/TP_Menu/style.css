@@ -27,16 +27,31 @@ body {
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
 }
 
+#choix{
+    padding-top: 55px;
+    font-size: large;
+}
+
 #TP1,
+#TP1_JS,
 #TP2,
-#TP3{
-    color : white;
+#TP3,
+#TP4,
+#TP5,
+#TP6,
+#TP7 {
+    color: white;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 #TP1:hover,
+#TP1_JS:hover,
 #TP2:hover,
-#TP3:hover{
+#TP3:hover,
+#TP4:hover,
+#TP5:hover,
+#TP6:hover,
+#TP7:hover {
     transform: scale(1.1);
     color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
