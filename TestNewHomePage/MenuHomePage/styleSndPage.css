@@ -37,17 +37,20 @@ body {
 
 #TP,
 #Mission,
-#ProjBdd {
+#ProjBdd,
+#Contact {
     color : white;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 #TP:hover,
 #Mission:hover,
-#ProjBdd:hover {
+#ProjBdd:hover,
+#Contact:hover {
     transform: scale(1.1);
+    color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
     /* text-shadow: 0 1px 0px rgba(110, 34, 34, 0.8); 
     text-shadow: 0 0 10px rgba(135, 33, 33, 0.8);  */
 }

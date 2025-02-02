@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bree+Serif&family=Press+Start+2P&display=swap');
+
+body {
+    background-color: rgb(18, 18, 18);
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprimez les marges par défaut */
+}
+
+#cadre {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    height: 80%; /* Ajustez la hauteur selon vos besoins */
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../AssetsHomePage/2eBackground.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
+    background-position: center; /* Centre l'image dans le cadre */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+#TP1,
+#TP2,
+#TP3{
+    color : white;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+#TP1:hover,
+#TP2:hover,
+#TP3:hover{
+    transform: scale(1.1);
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
+    /* text-shadow: 0 1px 0px rgba(110, 34, 34, 0.8); 
+    text-shadow: 0 0 10px rgba(135, 33, 33, 0.8);  */
+}
+
+#btnRetour{
+    position: absolute;
+    width: 135px;
+    bottom: 10px;
+    left: 45%;
+    align-items: center;
+}
+
+#btnRetour:hover {
+    transform: scale(1.1);
+}
