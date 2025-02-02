@@ -24,13 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     descriptionBox.appendChild(description);
     document.body.appendChild(descriptionBox);
 
+
     const firstLink = links[0];
-    if (firstLink) {
+    if (firstLink || backButton) {
         title.textContent = firstLink.getAttribute('data-title');
         sous_titre.textContent = firstLink.getAttribute('data-soustitre');
         description.textContent = firstLink.getAttribute('data-description');
         descriptionBox.style.display = 'block';
     }
+
+    
 
     links.forEach(link => {
         link.addEventListener('mouseenter', function() {
@@ -44,4 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
         //     descriptionBox.style.display = 'none';      // permet d'enlever la description quand le curseur n'est plus sur le lien
         // });                               
     });
+
+    const backButton = document.querySelector('.btnRetour');
+
+    if (backButton) {
+        backButton.addEventListener('mouseenter', function() {
+            descriptionBox.style.display = 'none';
+        });
+
+    }
 });
