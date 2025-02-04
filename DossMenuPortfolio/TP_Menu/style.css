@@ -21,7 +21,7 @@ body {
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-image: url('../../AssetsHomePage/2eBackground.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('../../AssetsHomePage/3background.jpg'); /* Remplacez par le chemin de votre image */
     background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
     background-position: center; /* Centre l'image dans le cadre */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
