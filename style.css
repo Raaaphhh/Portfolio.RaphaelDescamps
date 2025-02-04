@@ -6,25 +6,24 @@ body {
     font-family: 'Press Start 2P', cursive;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
-    margin: 0; /* Supprimez les marges par défaut */
+    height: 100vh;
+    margin: 0;
 }
 
 #cadre {
-    width: 80%; /* Ajustez la largeur selon vos besoins */
-    height: 80%; /* Ajustez la hauteur selon vos besoins */
+    width: 80%;
+    height: 80%;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-image: url('../AssetsHomePage/backgroudHomePage.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
-    background-position: center; /* Centre l'image dans le cadre */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-image: url('../AssetsHomePage/backgroudHomePage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #btnVersPortfolio {
@@ -53,6 +52,7 @@ body {
     margin-top: 10px;
     animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -65,5 +65,47 @@ body {
     }
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    #cadre {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
 
+    #btnVersPortfolio {
+        width: 120px;
+        margin-top: 100px;
+    }
 
+    #copy {
+        font-size: 1.2em;
+        margin-top: 50px;
+    }
+
+    #start {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #cadre {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #btnVersPortfolio {
+        width: 100px;
+        margin-top: 80px;
+    }
+
+    #copy {
+        font-size: 1em;
+        margin-top: 40px;
+    }
+
+    #start {
+        font-size: 0.8em;
+    }
+}

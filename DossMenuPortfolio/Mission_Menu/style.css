@@ -14,7 +14,7 @@ body {
 
 #cadre {
     width: 100%;
-    max-width: 1200px; /* Limitez la largeur maximale pour les grands écrans */
+    max-width: 1050px; /* Limitez la largeur maximale pour les grands écrans */
     height: auto;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;

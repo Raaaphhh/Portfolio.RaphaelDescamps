@@ -6,30 +6,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
-    margin: 0; /* Supprimez les marges par défaut */
+    height: 100vh; /* Ensure the body takes the full height of the window */
+    margin: 0; /* Remove default margins */
 }
 
 #cadre {
-    width: 80%; /* Ajustez la largeur selon vos besoins */
-    height: 80%; /* Ajustez la hauteur selon vos besoins */
+    width: 80%; /* Adjust width as needed */
+    height: 80%; /* Adjust height as needed */
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-image: url('../../AssetsHomePage/2eBackground.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
-    background-position: center; /* Centre l'image dans le cadre */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-image: url('../../AssetsHomePage/2eBackground.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust the image to cover the entire frame */
+    background-position: center; /* Center the image in the frame */
+    background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 #choix {
     display: flex;
-    flex-direction: column; /* Arrange les éléments en colonne */
+    flex-direction: column; /* Arrange elements in a column */
     justify-content: center;
     align-items: center;
     margin-top: 10%;
@@ -39,7 +38,7 @@ body {
 #Mission,
 #ProjBdd,
 #Contact {
-    color : white;
+    color: white;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
@@ -51,11 +50,9 @@ body {
     color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
-    /* text-shadow: 0 1px 0px rgba(110, 34, 34, 0.8); 
-    text-shadow: 0 0 10px rgba(135, 33, 33, 0.8);  */
 }
 
-#btnRetour{
+#btnRetour {
     position: absolute;
     width: 135px;
     bottom: 10px;
@@ -65,4 +62,37 @@ body {
 
 #btnRetour:hover {
     transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #cadre {
+        width: 90%;
+        height: 90%;
+    }
+
+    #choix {
+        margin-top: 5%;
+    }
+
+    #btnRetour {
+        width: 120px;
+        left: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #cadre {
+        width: 95%;
+        height: 95%;
+    }
+
+    #btnRetour {
+        width: 100px;
+        left: 35%;
+    }
 }
