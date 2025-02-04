@@ -6,28 +6,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
-    margin: 0; /* Supprimez les marges par défaut */
+    height: 100vh;
+    margin: 0;
 }
 
 #cadre {
-    width: 80%; /* Ajustez la largeur selon vos besoins */
-    height: 80%; /* Ajustez la hauteur selon vos besoins */
+    width: 80%;
+    max-width: 1200px; /* Limite la largeur maximale */
+    height: 80%;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-image: url('../../AssetsHomePage/3background.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
-    background-position: center; /* Centre l'image dans le cadre */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-image: url('../../AssetsHomePage/3background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#choix{
+#choix {
     padding-top: 55px;
     font-size: large;
 }
@@ -56,18 +56,54 @@ body {
     color: black;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
-    /* text-shadow: 0 1px 0px rgba(110, 34, 34, 0.8); 
-    text-shadow: 0 0 10px rgba(135, 33, 33, 0.8);  */
 }
 
-#btnRetour{
+#btnRetour {
     position: absolute;
     width: 135px;
     bottom: 10px;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     align-items: center;
 }
 
 #btnRetour:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) translateX(-50%);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #cadre {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #choix {
+        padding-top: 30px;
+        font-size: medium;
+    }
+
+    #btnRetour {
+        width: 100px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cadre {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #choix {
+        padding-top: 20px;
+        font-size: small;
+    }
+
+    #btnRetour {
+        width: 80px;
+        bottom: 20px;
+    }
 }
