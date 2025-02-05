@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sous_titre.style.color = '#D3D3D3'; // Couleur du sous-titre en gris clair
 
     descriptionBox.style.position = 'fixed';
-    descriptionBox.style.right = '200px'; // Déplacer légèrement vers la gauche
+    descriptionBox.style.right = '180px'; // Déplacer légèrement vers la gauche
     descriptionBox.style.top = '50%';
     descriptionBox.style.transform = 'translateY(-50%)';
     descriptionBox.style.padding = '10px';
