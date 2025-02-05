@@ -58,11 +58,38 @@ body {
     bottom: 10px;
     left: 45%;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 #btnRetour:hover {
     transform: scale(1.1);
 }
+
+#linkdin {
+    position: absolute;
+    bottom: 10px;
+    left: 39%; /* Adjust this value to position the logo as needed */
+    width: 30px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+#linkdin:hover {
+    transform: scale(1.1);
+}
+
+#CV {
+    position: absolute;
+    bottom: 10px;
+    left: 34%; /* Adjust this value to position the logo as needed */
+    width: 30px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+#CV:hover {
+    transform: scale(1.1);
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
