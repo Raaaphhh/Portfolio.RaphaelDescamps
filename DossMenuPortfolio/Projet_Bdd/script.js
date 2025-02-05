@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(descriptionBox);
 
 
-    const firstLink = links[0];
-    if (firstLink || backButton) {
-        title.textContent = firstLink.getAttribute('data-title');
-        sous_titre.textContent = firstLink.getAttribute('data-soustitre');
-        description.textContent = firstLink.getAttribute('data-description');
-        descriptionBox.style.display = 'block';
-    }
+    // const firstLink = links[0];
+    // if (firstLink || backButton) {
+    //     title.textContent = firstLink.getAttribute('data-title');
+    //     sous_titre.textContent = firstLink.getAttribute('data-soustitre');
+    //     description.textContent = firstLink.getAttribute('data-description');
+    //     descriptionBox.style.display = 'block';
+    // }
 
     
 
