@@ -90,7 +90,6 @@ body {
     transform: scale(1.1);
 }
 
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     #cadre {
